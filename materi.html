@@ -1,0 +1,113 @@
+  <!DOCTYPE html>
+    <html>
+        <head>
+            <title>materi-website faiz</title>
+            <style>
+                th {
+                    background-color: aqua;
+                    color: red;
+                }
+                #balasan {
+                    margin-top: 10px;
+                    color: darkgreen;
+                    font-weight: bold;
+                    display: none;
+                }
+            </style>
+        </head>
+        <body style="background-color: lightblue;">
+            <div style="background-color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="text-align: center; color: darkblue;">📚Daftar Mata Pelajaran Saya</h2>
+            <ol style="color: darkgreen; font-size: 18px;">
+                <li>Belajar HTML-Membuat website</li>
+                <li>Belajar Pemrograman Dasar</li>
+                <li>Belajar Bahasa Inggris</li>
+                <li>Belajar Elektronik & Arduino</li>
+            </ol>
+            <hr color="darkblue" size="5">
+            </div>
+            <div style="background-color: white; padding: 20px;border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="text-align: center; color: darkblue;">🛠 Alat yang saya pelajari</h3>
+            <ul style="color: darkgreen; font-size: 18px;">
+                <li>Komputer & Laptop</li>
+                <li>Arduino & Sensor</li>
+                <li>Visual Studio Code</li>
+                <li>Internet & Browser</li>
+            </ul>
+            <hr color="darkblue" size="5">
+            </div>
+            <div style="background-color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <h3 style="color: darkblue; text-align: center;">📆Jadwal Belajar</h3>
+            <table border="1" align="center" style="color: darkgreen;font-size: 17px; background-color: white; padding: 8px;">
+                <tr>
+                    <th>Hari</th>
+                    <th>Mata Pelajaran</th>
+                    <th>Waktu</th>
+                </tr>
+                <tr>
+                    <td>Senin</td>
+                    <td>Html & Website</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>Selasa</td>
+                    <td>Pemrograman Dasar</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>Rabu</td>
+                    <td>Bahasa Inggris</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+                <tr>
+                    <td>Kamis</td>
+                    <td>Arduino & Elektronik</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+            </table>
+                    <hr color="darkblue" size="5">
+            </div>
+            <div style="background-color: white;padding: 20px; border-radius: 8px; margin-top: 20px;">
+                <h3 style="text-align: center;">
+                    🖼Gambar Contoh
+                </h3>
+              <p style="text-align: center;">  <img src="gambar komputer.jpg.jpg" alt="Gambar Latihan" width="300"> </p>
+            </p>
+            <hr color="darkblue" size="5">
+            </div>
+            <div style="background-color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+            <h3  style="text-align: center; color: darkblue;">📁Halaman Login</h3>
+            <p style="text-align: center; font-size: 17px;">
+                <a href="halaman utama.html" style="color: darkgreen;">🏠Halaman</a> 
+                <a href="tentang saya.html" style="color: darkgreen;"> 🙎‍♂️PERKENALAN</a>
+                <a href="kontak.html" style="color: darkgreen;"> 📞Kontak</a>
+                <a href="materi.html" style="color: darkgreen;"> 📗materi</a>
+            </p>
+        <hr color="darkblue" size="5">
+            </div>
+            <div style="background-color: white; padding: 20px; border-radius: 8px; margin-top: 20px;">
+        <h3 style="text-align: center; color: darkblue;">💬Kirim pesan</h3>
+        <p style="text-align: center;">
+            Nama:<br>
+            <input type="text" id="namaPengguna" placeholder="Tulis namamu disini" style="width: 300px; padding: 8px; font-size: 16px;">
+            <br>Pesan:<br>
+            <textarea id="isiPesan" placeholder="Tulis Pesan mu....." style="width: 300px; height: 100px; padding: 8px; font-size: 16px;"></textarea> <br><br>
+            <button onclick="tampilkanbalasan()" padding: 10px; font-size: 16px;background-color: darkgreen;color: white;border: none;border-radius: 5px;">✅Kirim Pesan</button>
+        <div id="balasan">Terima kasih! pesan dari <span id="namaDipanggil"></span> sudah dikirim </div>
+        </p>
+        <hr color="darkblue" size="5">
+            </div>
+        <footer style="text-align: center; color: darkblue; font-size: 15px; padding: 10px;">
+            <p>📝Dibuat oleh: Muh Faiz Fatahillah</p>
+            <p>© Tahun 2026 — Belajar Membuat Website</p>
+        </footer>
+        <script>
+            function tampilkanbalasan() {
+                let nama =
+                document.getElementById('namaPengguna').value || 'Teman';
+                document.getElementById('namaDipanggil').textContent = nama;
+                document.getElementById('balasan').style.display = 'block'
+            }
+        </script>
+        </body>
+    </html>
